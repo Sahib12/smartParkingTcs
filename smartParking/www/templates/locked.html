@@ -1,0 +1,41 @@
+<!-- bar positive #387ef5 -->
+<ion-view view-title="Locked">
+  <ion-content>
+      
+      <div class="card">
+          <div class="item item-text-wrap">
+            Sorry you are locked now because you have clicked the book button but you have not arrived at the parking slot yet.
+          </div>
+        </div>
+      
+      
+      <div class="card">
+      <div class="item item-divider" style="background:#387ef5; color:white">
+        Pending booking details
+      </div>
+      <div class="item item-text-wrap">
+          <ul>
+              <li>
+                  <div class="card">
+                      <div class="item item-text-wrap">
+                        <a href = "http://maps.google.com/maps?saddr={{currentLat}},{{currentLong}}&daddr={{entireObj.lat}},{{entireObj.long}}">Click here for directions</a>
+                      </div>
+                    </div>
+            </li>
+            <li>
+                  <div class="card">
+                      <div class="item item-text-wrap">
+                        Rate per minute - {{entireObj.rate}} Rupees
+                      </div>
+                    </div>
+            </li>
+          </ul>
+      </div>
+    <div class="item item-divider">
+        <button class = "button button-positive button-small" ng-click="cancelBooking()">Cancel Booking</button>
+      </div>
+      
+    </div>
+
+  </ion-content>
+</ion-view>

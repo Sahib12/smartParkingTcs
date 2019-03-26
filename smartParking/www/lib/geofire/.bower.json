@@ -1,0 +1,15 @@
+{
+  "name": "geofire",
+  "homepage": "https://github.com/firebase/geofire-js",
+  "version": "5.0.1",
+  "_release": "5.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v5.0.1",
+    "commit": "3c8e832268a3ad19d2d5330ca02eb94cfb2d81bf"
+  },
+  "_source": "https://github.com/firebase/geofire-js.git",
+  "_target": "^5.0.1",
+  "_originalSource": "geofire",
+  "_direct": true
+}

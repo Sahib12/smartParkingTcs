@@ -1,0 +1,17 @@
+<ion-view view-title="Home">
+  <ion-content>
+    <div class = "card">
+        Keep this tab opened, it will automatically send the data to the server.
+      </div>
+      
+      <div class="list">
+          <form>
+          <label class="item item-input">
+            <input type="text" placeholder="Url" ng-model = "formData.url">
+          </label>
+          </form>
+          
+          <button class = "button button-positive button-small" ng-click = "sendData();">Submit</button>
+        </div>
+  </ion-content>
+</ion-view>

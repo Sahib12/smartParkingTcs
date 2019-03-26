@@ -1,0 +1,53 @@
+
+
+
+<ion-view view-title="Home">
+  <ion-content>
+    
+      <div class="list">
+          
+          <label class="item item-input">
+            <!--<input type="text" placeholder="Search" id="mapsearch">-->
+              <span class="input-label">Radius </span>
+              <input type = "number" min = "0" max = "3000" ng-model = "formData1.radius" placeholder = "Please enter the radius.By default it is 100 kms"> <br>
+              
+              </label>
+          <button class = "button button-positive button-small" ng-click = "execAfterAuth();">Submit</button>
+        </div>
+      
+        <div id="map" style="width:100%; height:450px;"></div>
+      
+    <div class="card">
+      <div class="item item-divider item-text-wrap">
+          <p><b>NOTE : </b> The distance to the parking slots shown below is arial distance from your current location. The actual distance may vary.</p>
+      </div>
+    </div>
+      
+    <div class="card" ng-repeat = "i in finalLocations">
+      <div class="item item-divider">
+        <!--Distance - {{i.distance}} km-->
+      </div>
+      <div class="item item-divider" style="background-color:#387ef5; color:white">
+          Distance - {{i.distance}} km<br>
+          <span ng-show="!i.locked">Not occupied</span>
+          <span ng-show="i.locked">Already occupied</span>
+        <!--Distance - {{i.distance}} km-->
+      </div>
+      <div class="item item-text-wrap">
+      
+          <a href = "http://maps.google.com/maps?saddr={{currentLat}},{{currentLong}}&daddr={{i.lat}},{{i.long}}">Click here to go to google maps for directions.</a>
+          <br>
+          <button ng-click = "bookSlot(i.url, i.$id);" ng-disable="i.locked" class = "button button-positive button-small">Book Now</button>
+      </div>
+     
+    </div>
+       
+
+  </ion-content>
+</ion-view>
+
+ <!--
+<script id="templates/modal.html" type="text/ng-template">
+  
+    </script>
+-->

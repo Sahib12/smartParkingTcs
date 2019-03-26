@@ -1,0 +1,23 @@
+<ion-view view-title="Previous Bookings">
+  <ion-content>
+    <div class="card" ng-repeat = "i in itemList | orderBy : timeout">
+      <div class="item item-divider" style="background:#387ef5; color:white;">
+        {{i.timeOut | date}}
+      </div>
+        <div class="list list-inset">
+            
+            <div class="item">
+              Time In : {{i.timeIn | date : 'hh:mm:a'}}
+            </div>
+            <div class="item">
+              Time Out : {{i.timeOut | date : 'hh:mm:a'}}
+            </div>
+            <div class="item">
+              Bill Amount : {{i.bill}} Rupees
+            </div>
+            
+
+        </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,96 @@
+<ion-view view-title="Current">
+  <ion-content>
+      <div class = "main" ng-show = "!done">
+            <div class="card">
+              <div class="item item-text-wrap">
+                You have successfully parked your vehicle on the booked slot.
+              </div>
+            </div>
+      
+      
+      
+            <div class="card">
+              <div class="item item-divider" style="background:#387ef5; color:white">
+               Current session details
+              </div>
+              <div class="item item-text-wrap">
+                  <ul>
+                        <li>
+                          <div class="card">
+                              <div class="item item-text-wrap">
+                                Booking time - {{bookedDate | date}} {{bookedDate | date : 'hh:mm a' }}
+                              </div>
+                            </div>
+                        </li>
+                      <li>   
+                          <div class="card">
+                              <div class="item item-text-wrap">
+                                Rate per minute - 10 Rupees
+                              </div>
+                          </div>
+                      </li>
+
+                      <li>
+                          <div class="card">
+                              <div class="item item-text-wrap">
+                                <a href = "http://maps.google.com/maps?saddr={{currentLat}},{{currentLong}}&daddr={{entireObj.lat}},{{entireObj.long}}">Click here for directions</a>
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+            <div class="item item-text-wrap">
+                  This page will automatically refresh once you leave the parking slot. Click the below button if you have left the parking slot and the page is not refreshed.
+              </div>
+              <div class="item item-divider">
+                <button class = "button button-positive button-small">Raise Ticket</button>
+              </div>
+
+            </div>
+      </div>
+      
+      <div class = "billamount" ng-show = "done">
+          <div class="card">
+              <div class="item item-divider" style="background:#387ef5; color:white">
+               Bill Details
+              </div>
+              <div class="item item-text-wrap">
+                  <ul>
+                        <li>
+                          <div class="card">
+                              <div class="item item-text-wrap">
+                                Time In - {{timein | date}} {{timein | date : 'hh:mm a'}}
+                              </div>
+                            </div>
+                        </li>
+                      <li>   
+                          <div class="card">
+                              <div class="item item-text-wrap">
+                                Time Out - {{timeout | date}} {{timeout | date : 'hh:mm a'}}
+                              </div>
+                          </div>
+                      </li>
+
+                      <li>
+                          <div class="card">
+                              <div class="item item-text-wrap">
+                                Rate per minute - {{rate}}
+                              </div>
+                          </div>
+                      </li>
+                      
+                      
+                      <li>
+                          <div class="card">
+                              <div class="item item-text-wrap">
+                                  <b>Total Bill Amount</b> - {{cost}} Rupees
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+
+            </div>
+      </div>
+  </ion-content>
+</ion-view>
