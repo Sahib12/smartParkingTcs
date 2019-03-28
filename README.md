@@ -46,8 +46,6 @@ REFERENCES TAKEN FROM :​
 * https://www.popsci.com/diy/article/2013-01/program-arduino-few-simple-steps​
 
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
 ## Connecting Arduino with Raspberry Pi
 
 Arduino Board is connect to Raspberry Pi. Raspberry Pi performs two major functions.
