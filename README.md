@@ -95,9 +95,10 @@ Steps :
 5. Open Terminal/Power Shell at this location and run the command `npm install` to install the dependencies.
 6. Run the command `node index`. This will start a node server at port 3000. You can access the server by using the url `http://localhost:3000/`. Only get requests can be made to this server. Express js is used f
 7. Run the command `ngrok http 3000`. Ngrok is a lightweight tool that creates a secure tunnel on your local machine along with a public URL you can use for browsing your local site.
-8. Copy the public url visible on the command prompt we will need it later. Refer the screenshot below. [clickhere] (https://drive.google.com/open?id=1-V_KO9Zo64b_Pd9fyPAN0yD3dppoM12l) to see the screenshot.
+8. Copy the public url visible on the command prompt we will need it later. Refer the screenshot below. Click 
+[here](https://drive.google.com/open?id=1-V_KO9Zo64b_Pd9fyPAN0yD3dppoM12l) to see the screenshot.
 9. Navigate to 'ionicSensor' folder. It contains a file `test.apk`. Install this apk (Before installing please make sure developer options are enabled on your phone and usb debugging is turned on).
-10. Open the app, paste the url that we copied in step 8 into the text box and click on 'submit' button and leave the app open. Click [here] (https://drive.google.com/open?id=1D-AdKTKZq6sQsqRRayvdCfF1Z8XGTJAu) to see the demo.
+10. Open the app, paste the url that we copied in step 8 into the text box and click on 'submit' button and leave the app open. Click [here](https://drive.google.com/open?id=1D-AdKTKZq6sQsqRRayvdCfF1Z8XGTJAu) to see the demo.
 
 
 ## Using the mobile application
