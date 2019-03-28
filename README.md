@@ -4,7 +4,7 @@ To create a system through which we can solve the parking problem in our country
 
 # Working
 
-* At each and every parking slot an Arduino board with IR sensor connected to a Raspbery pi is installed, which will be used to detect whether a parking slot is occupied or not.
+* At each and every parking slot an Arduino board (with IR sensor) connected to a Raspbery pi is installed, which will be used to detect whether a parking slot is occupied or not.
 ​
 * A node server will run on the raspberry pi which will enable the users to book a parking slot in advance via REST API calls.
 ​
@@ -48,7 +48,7 @@ REFERENCES TAKEN FROM :​
 
 ## Connecting Arduino with Raspberry Pi
 
-Arduino Board is connect to Raspberry Pi. Raspberry Pi performs two major functions.
+Arduino Board is connected to Raspberry Pi. Raspberry Pi performs two major functions.
 
 * It sends the state of IR sensor to Firebase Realtime Database.
 * It runs a node server, which is used by the mobile application to check whether the raspberry pi is live or not.
@@ -68,7 +68,7 @@ Follow the below listed steps to start a node server on raspberry PI
 * Connect Arduino to Raspberry pi via USB (We assume that you have already integrated the IR sensor into Arduino).
 * Navigate to the folder 'RaspberrySendState'.
 * Open Terminal/Power Shell at this location and run the command `npm install` to install the dependencies.
-* Open the file index.js in any editor. There are four variables named `lat`, `lng`, `url`, `rate`. We need to put in values into these variables. We are hardcoding the values. This setup has to be done just once.
+* Open the file index.js in any editor. There are four variables named `lat`, `lng`, `url`, `rate`. We need to put in values into these variables. We are hardcoding the values. This setup has to be done just once. GPS module can be used to get the location coordinates directly.
     * lat - It contains the latitude of the parking slot.
     * lng - It contains the longitude of the parking slot.
     * rate - It contains the parking charges per minute.
