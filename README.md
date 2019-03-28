@@ -104,7 +104,10 @@ Steps :
 ## Using the mobile application
 
 
-'smartParking' folder contains the code of final ionic application which will be used by the end users. There is a file named 'final.apk' in this folder. Install this apk (Before installing please make sure developer options are enabled on your phone and usb debugging is turned on).
+'smartParking' folder contains the code of final ionic application which will be used by the end users. There is a file named 'final.apk' in this folder. Install this apk (Before installing please make sure developer options are enabled on your phone and usb debugging is turned on). After installing this apk file, you will be able :
+* See the list of nearby parking slots.
+* Book a parking slot and navigate to it using google maps.
+* See the list of past bookings.
 
 
 
